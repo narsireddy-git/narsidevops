@@ -1,0 +1,11 @@
+how to create a Dockerfile
+vim dockerfile
+FROM ubuntu
+MAINTAIER narsi reddy
+RUN apt get update -y
+RUN apt install jenkins -y
+COPY /rama
+EXPOSE 8080
+WORKDIR /dockerfile
+
+#docker build -t rama .
